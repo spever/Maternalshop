@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subzero_bg_main_gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subzero_title_height"
+        android:background="@color/subzero_title_color"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/view_top_title"
+            android:gravity="center_vertical"
+            android:src="@drawable/selector_view_back_arrow"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="签名"
+            android:textColor="@color/title_text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_phoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dip"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray" />
+
+        <EditText
+            android:id="@+id/et_sign"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/line_1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="@dimen/mp_margin_lr"
+            android:layout_marginRight="@dimen/mp_margin_lr"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:drawablePadding="10dip"
+            android:gravity="left|top"
+            android:hint="在此编辑签名，请输入少于30个字"
+            android:lineSpacingMultiplier="1.5"
+            android:maxEms="30"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/edit_text_gray"
+            android:textColorHint="@color/edit_hint_gray"
+            android:textCursorDrawable="@drawable/shape_edit_text_cursor_blue"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/et_sign"
+            android:background="@color/line_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/tv_text_lenght_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="/30"
+            android:textColor="#C8C8C8" />
+
+        <TextView
+            android:id="@+id/tv_text_lenght_curr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_text_lenght_max"
+            android:text="0"
+            android:textColor="#C8C8C8" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/mp_margin_lr"
+        android:layout_marginRight="@dimen/mp_margin_lr"
+        android:background="@drawable/selector_view_login"
+        android:text="发布"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

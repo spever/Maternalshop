@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subzero_bg_main_gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.sort.SortActivity"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subzero_title_height"
+        android:background="@color/subzero_title_color"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/iv_back_search"
+            style="@style/view_top_title"
+            android:gravity="center_vertical"
+            android:src="@drawable/selector_view_back_arrow"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/ctv_edit"
+            android:layout_toRightOf="@+id/iv_back_search"
+            android:background="@drawable/shape_group_search" >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="输入关键字搜索"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/edit_text_gray"
+                android:textColorHint="@color/edit_hint_gray"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <com.subzero.common.view.CheckTextView
+            android:id="@+id/ctv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="搜索"
+            app:ctv_isChecked="false"
+            app:ctv_isKeepClickEffect="true"
+            app:ctv_textColorNormal="#FFFFFF"
+            app:ctv_textColorSelected="@color/subzero_bg_main_gray"
+            app:ctv_textSizeNormal="20sp"
+            app:ctv_textSizeSelected="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subzero_title_height"
+        android:background="@color/subzero_title_color"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/view_top_title"
+            android:gravity="center_vertical"
+            android:src="@drawable/selector_view_back_arrow"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="婴儿奶粉"
+            android:textColor="@color/title_text_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_top_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FCFCFC"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_sort_multiple"
+            style="@style/layout_activtiy_sort_top_navi"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_sort_multiple"
+                style="@style/tv_activtiy_sort_top_navi"
+                android:text="综合" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line_vertical_gry"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:id="@+id/layout_sort_sales_volume"
+            style="@style/layout_activtiy_sort_top_navi"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_sort_sales_volume"
+                style="@style/tv_activtiy_sort_top_navi"
+                android:text="销量" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line_vertical_gry"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:id="@+id/layout_sort_price"
+            style="@style/layout_activtiy_sort_top_navi"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_sort_price"
+                style="@style/tv_activtiy_sort_top_navi"
+                android:text="价格" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <subzero.maxwin.XListView
+        android:id="@+id/xlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F2F2"
+        android:clickable="false"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" />
+
+</LinearLayout>

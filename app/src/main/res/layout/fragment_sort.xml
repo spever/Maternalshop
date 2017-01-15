@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subzero_bg_main_gray"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subzero_title_height"
+        android:background="@color/subzero_title_color"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent" >
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/ic_view_down_brow"
+            android:gravity="center_vertical"
+            android:ems="6"
+            android:paddingLeft="@dimen/subzero_title_margin_left"
+            android:paddingRight="16dp"
+            android:text="北京"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:textColor="#FFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_group_search" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="输入关键字搜索"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/edit_text_gray"
+                android:textColorHint="@color/edit_hint_gray"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- subzero.maxwin.XListView -->
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+</LinearLayout>

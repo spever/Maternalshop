@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_order_detail_multiple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subzero_bg_main_gray"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription,HardcodedText" >
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/line_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/tv_order_no_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单编号："
+            android:textColor="@color/gray_5a"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_order_no_mutiple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_order_status"
+            android:layout_toRightOf="@+id/tv_order_no_left"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/gray_5a"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="未完成订单"
+            android:textColor="#A5A5A5"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_group_white_gray"
+        android:paddingBottom="16dp"
+        android:paddingRight="@dimen/to_screen_right"
+        android:paddingTop="16dp"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/iv_product_logo"
+            android:layout_width="@dimen/product_logo_small_width_in_cart"
+            android:layout_height="@dimen/product_logo_small_height_in_cart"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/shape_cart_product_logo"
+            android:padding="5dp"
+            android:src="@drawable/logo_empty"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_product_logo_2"
+            android:layout_width="@dimen/product_logo_small_width_in_cart"
+            android:layout_height="@dimen/product_logo_small_height_in_cart"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_cart_product_logo"
+            android:padding="5dp"
+            android:src="@drawable/logo_empty"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_product_logo_3"
+            android:layout_width="@dimen/product_logo_small_width_in_cart"
+            android:layout_height="@dimen/product_logo_small_height_in_cart"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_cart_product_logo"
+            android:padding="5dp"
+            android:src="@drawable/logo_empty"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_product_logo_more"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="16dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_order_submit_more"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_product_count_multiple"
+            style="@style/tv_fragment_mine_item"
+            android:layout_width="match_parent"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="共0件"
+            android:textColor="@color/gray_66" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray" />
+
+    <View
+        android:id="@+id/line_last"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/subzero_bg_main_gray"
+        android:visibility="gone" />
+
+</LinearLayout>

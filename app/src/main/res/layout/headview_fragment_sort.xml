@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp" >
+
+        <subzero.angeldevil.AutoScrollViewPager
+            android:id="@+id/asvp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" >
+        </subzero.angeldevil.AutoScrollViewPager>
+
+        <com.subzero.common.view.CircleIndicator
+            xmlns:app="http://schemas.android.com/apk/res/com.subzero.maternalshop"
+            android:id="@+id/ci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            app:ci_animator="@animator/circleindicator_reverse"
+            app:ci_drawable="@drawable/circleindicator_black_radius"
+            app:ci_drawable_unselected="@drawable/circleindicator_white_radius"
+            app:ci_height="10dip"
+            app:ci_width="10dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_head1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/ll_head2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal" />
+
+</LinearLayout>

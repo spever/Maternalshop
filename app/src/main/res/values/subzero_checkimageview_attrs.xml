@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CheckImageView">
+
+        <!-- CheckImageView的背景色（常态） -->
+        <attr name="civ_imageResNormal" format="reference" />
+        <!-- CheckImageView的背景色（被选中） -->
+        <attr name="civ_imageResSelected" format="reference" />
+        <!-- CheckImageView的选中状态（被选中？） -->
+        <attr name="civ_isChecked" format="boolean" />
+        <!-- CheckImageView 保持点击后的状态 -->
+        <attr name="civ_isKeepClickEffect" format="boolean"/>
+        
+    </declare-styleable>
+
+</resources>

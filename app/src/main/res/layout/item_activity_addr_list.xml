@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/subzero_bg_main_gray" />
+
+    <View
+        android:id="@+id/line_top_margin0"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray" />
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_group_white_gray" >
+
+        <ImageView
+            android:id="@+id/iv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:src="@drawable/selector_cart_edit"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:text="收货人"
+            android:textColor="#838383"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_default"
+            android:layout_toRightOf="@+id/tv_receiver"
+            android:gravity="left"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text=""
+            android:textColor="#A7A7A7"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_phone_num"
+            android:layout_toLeftOf="@+id/iv_default"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="2"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:text="具体收货地址"
+            android:textColor="#ADADAD"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray" />
+
+    <View
+        android:id="@+id/line_last"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/subzero_bg_main_gray" />
+
+</LinearLayout>

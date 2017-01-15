@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullToRefresh">
+
+        <!-- 整个PullToRefreshListView 的背景色 -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+        <!-- 下拉刷新头的背景色 -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+        <!-- 下拉刷新，提示的字体色 -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+        <!-- 上次刷新的字体色 -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+        <!-- 刷新模式：下拉、上啦、两种 -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+        <!-- 显示右上角、右下角的指示器 -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+        <!-- 下拉刷新的图标 -->
+        <attr name="ptrDrawable" format="reference" />
+        <!-- 可使用在标题视图加载指示器。重写设定ptrdrawable。 -->
+        <attr name="ptrDrawableStart" format="reference" />
+        <!-- 可使用在页脚视图加载指示器。重写设定ptrdrawable。 -->
+        <attr name="ptrDrawableEnd" format="reference" />
+        <!-- Android的内置在滚动应用于拉动刷新。 -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+        <!-- 基于文本的颜色，字体，大小，和样式的页眉和页脚加载视图 -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+        <!-- 基于文本的颜色，字体，大小，和样式的页眉和页脚加载视图的子标题 -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+        <!-- 刷新动画 -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+        <!-- 刷新时，可以滚动View -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+        <!-- 在下拉时，不断旋转；只适用于 rotate 动画 -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+        <!-- 以下是depreceated，不要使用 -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+
+</resources>

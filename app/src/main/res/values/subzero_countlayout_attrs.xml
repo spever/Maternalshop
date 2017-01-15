@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CountLayout">
+        <attr name="bg_layout" format="reference" />
+        <attr name="color_line1" format="color|reference" />
+        <attr name="color_line2" format="color|reference" />
+        <attr name="edittext_background" format="reference"></attr>
+        <attr name="edittext_width" format="dimension|reference"></attr>
+        <attr name="edittext_size" format="dimension|reference"></attr>
+        <attr name="edittext_textcolor" format="color|reference"></attr>
+        <attr name="edittext_hintcolor" format="color|reference"></attr>
+        <attr name="edittext_hint" format="string|reference"></attr>
+        <attr name="image_paddingLeft" format="dimension|reference"></attr>
+        <attr name="image_paddingRight" format="dimension|reference"></attr>
+        <attr name="image_paddingTop" format="dimension|reference"></attr>
+        <attr name="image_paddingBottom" format="dimension|reference"></attr>
+    </declare-styleable>
+
+</resources>

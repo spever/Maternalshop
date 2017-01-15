@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:id="@+id/ll_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_activtiy_index_foot_navi"
+        android:orientation="vertical" />
+
+    <RadioGroup
+        android:id="@+id/rg_activtiy_index_foot_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent" >
+
+        <RadioButton
+            android:id="@+id/rb_activity_index_foot_navi_1"
+            style="@style/rb_activity_index_foot_navi"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_activity_index_foot_iv1"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_activity_index_foot_navi_2"
+            style="@style/rb_activity_index_foot_navi"
+            android:drawableTop="@drawable/selector_activity_index_foot_iv2"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/rb_activity_index_foot_navi_3"
+            style="@style/rb_activity_index_foot_navi"
+            android:drawableTop="@drawable/selector_activity_index_foot_iv3"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rb_activity_index_foot_navi_4"
+            style="@style/rb_activity_index_foot_navi"
+            android:drawableTop="@drawable/selector_activity_index_foot_iv4"
+            android:text="我的" />
+    </RadioGroup>
+
+</RelativeLayout>

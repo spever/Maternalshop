@@ -1,0 +1,139 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">#FFE1E8EB</item>
+    </style>
+
+    <style name="fadeActivity" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="transparentStyle" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 所有控件_顶部_标题 -->
+    <style name="view_top_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">@dimen/top_title_margin_left</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <!-- 文本_顶部_标题 -->
+    <style name="tv_top_title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/title_text_color</item>
+    </style>
+
+    <style name="rb_activity_index_foot_navi">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/footNavi_item_text_size</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">@dimen/footNavi_item_paddingTop</item>
+        <item name="android:paddingBottom">@dimen/footNavi_item_paddingBottom</item>
+        <item name="android:background">@color/subzero_foot_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_activity_index_foot_text_color</item>
+    </style>
+
+    <style name="layout_fragment_mine_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="tv_fragment_mine_item">
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="tv_fragment_mine_item_right">
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableRight">@drawable/selected_view_arrow_right</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="layout_activtiy_sort_top_navi">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="tv_activtiy_sort_top_navi">
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:drawableRight">@drawable/selector_view_down_triangle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="et_align_parent_right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:hint">@color/edit_hint_gray</item>
+    </style>
+
+    <style name="tv_align_parent_right_drawable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawableRight">@drawable/selected_view_arrow_right</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <!-- 较宽的 图片 -->
+    <style name="iv_too_width">
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+</resources>

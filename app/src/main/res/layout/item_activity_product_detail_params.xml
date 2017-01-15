@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subzero_bg_main_gray"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <View
+        android:id="@+id/line_top_margin0"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray" />
+
+    <RelativeLayout style="@style/layout_fragment_mine_item" >
+
+        <TextView
+            android:id="@+id/tv_params_key"
+            style="@style/tv_fragment_mine_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的积分"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_params_values"
+            style="@style/tv_fragment_mine_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0分"
+            android:textColor="#DFDFDF" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<resources>
+
+    <dimen name="subzero_title_height">56dp</dimen>
+    <!-- 标题栏|布局|距 屏幕的左间距 -->
+    <dimen name="subzero_title_margin_left">16dp</dimen>
+    <dimen name="subzero_title_margin_right">16dp</dimen>
+    <!-- 布局|距 屏幕的左间距 -->
+    <dimen name="to_screen_left">16dip</dimen>
+    <dimen name="to_screen_right">16dip</dimen>
+    <!-- match_parent时，两边间距 -->
+    <dimen name="mp_margin_lr">24dip</dimen>
+    <dimen name="mp_margin_lr_small">16dip</dimen>
+    <dimen name="corners_radius">5dip</dimen>
+    <!-- 顶部tabs导航的高度 -->
+    <dimen name="tabs_height">48dp</dimen>
+    <!-- 底部导航 -->
+    <dimen name="footNavi_item_text_size">14sp</dimen>
+    <dimen name="footNavi_item_paddingTop">5dp</dimen>
+    <dimen name="footNavi_item_paddingLeft">5dp</dimen>
+    <dimen name="footNavi_item_paddingRight">5dp</dimen>
+    <dimen name="footNavi_item_paddingBottom">2dp</dimen>
+    <!-- 个人中心，右边控件的 右边距 -->
+    <dimen name="mar_right_activity_user_man">36dp</dimen>
+
+    <!-- 购物车 选中 -->
+    <dimen name="cart_edit_padding_left">16dp</dimen>
+    <dimen name="cart_edit_padding_right">16dp</dimen>
+    <!-- 列表页，商品Logo大小 -->
+    <dimen name="product_logo_width_in_cart">104dp</dimen>
+    <dimen name="product_logo_height_in_cart">104dp</dimen>
+    <!-- 列表页，商品Logo大小 -->
+    <dimen name="product_logo_small_width_in_cart">48dp</dimen>
+    <dimen name="product_logo_small_height_in_cart">48dp</dimen>
+    <!-- 加减号的大小 -->
+    <dimen name="cart_add_dec_paddingLeft">4dp</dimen>
+    <dimen name="cart_add_dec_paddingRight">4dp</dimen>
+    <dimen name="cart_add_dec_paddingTop">2dp</dimen>
+    <dimen name="cart_add_dec_paddingBottom">2dp</dimen>
+    <dimen name="user_logo_height">112dp</dimen>
+    <dimen name="user_logo_width">112dp</dimen>
+    <dimen name="cornersRadius">12dp</dimen>
+
+</resources>

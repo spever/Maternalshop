@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/subzero_bg_main_gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subzero_title_height"
+        android:background="@color/subzero_title_color"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/view_top_title"
+            android:gravity="center_vertical"
+            android:src="@drawable/selector_view_back_arrow"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="联系商家"
+            android:textColor="@color/title_text_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/line_gray" />
+
+        <RelativeLayout
+            style="@style/layout_fragment_mine_item"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_group_white_gray"
+            android:paddingRight="0dp" >
+
+            <TextView
+                android:id="@+id/tv_phone_left"
+                style="@style/tv_fragment_mine_item"
+                android:layout_width="wrap_content"
+                android:text="电话" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/tv_align_parent_right_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/tv_phone_left"
+                android:gravity="center_vertical|right"
+                android:maxEms="10"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/line_gray" />
+
+        <RelativeLayout
+            style="@style/layout_fragment_mine_item"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_group_white_gray"
+            android:paddingRight="0dp" >
+
+            <TextView
+                android:id="@+id/tv_qq_left"
+                style="@style/tv_fragment_mine_item"
+                android:layout_width="wrap_content"
+                android:text="QQ" />
+
+            <TextView
+                android:id="@+id/tv_qq"
+                style="@style/tv_align_parent_right_drawable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/tv_qq_left"
+                android:gravity="center_vertical|right"
+                android:maxEms="10"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/line_gray" />
+
+        <RelativeLayout
+            style="@style/layout_fragment_mine_item"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_group_white_gray"
+            android:paddingRight="0dp" >
+
+            <TextView
+                android:id="@+id/tv_email_left"
+                style="@style/tv_fragment_mine_item"
+                android:layout_width="wrap_content"
+                android:text="邮箱" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/tv_align_parent_right_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/tv_email_left"
+                android:gravity="center_vertical|right"
+                android:maxEms="10"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:text="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray" />
+    </LinearLayout>
+
+</LinearLayout>

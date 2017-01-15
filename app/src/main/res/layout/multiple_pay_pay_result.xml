@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:background="@drawable/multiple_pay_result"
+    tools:context="com.alex.materialdesign.MainActivity" >
+
+    <subzero.pnikosis.ProgressWheel
+        android:id="@+id/pw"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:matProg_barColor="#F08300"
+        app:matProg_barSpinCycleTime="500"
+        app:matProg_barWidth="5dip"
+        app:matProg_circleRadius="40dip"
+        app:matProg_fillRadius="true"
+        app:matProg_linearProgress="true"
+        app:matProg_progressIndeterminate="true"
+        app:matProg_rimColor="#CFD8DC"
+        app:matProg_rimWidth="3dip"
+        app:matProg_spinSpeed="1.0" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_toRightOf="@+id/tv"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:paddingRight="36dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="支付中 请稍等..."
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

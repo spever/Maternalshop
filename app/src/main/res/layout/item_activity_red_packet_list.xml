@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/subzero_bg_main_gray" />
+
+    <View
+        android:id="@+id/line_top_margin0"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray" />
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_group_white_gray" >
+
+        <RelativeLayout
+            android:id="@+id/iv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/logo_rede_packet_selected"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            tools:ignore="ContentDescription" >
+
+            <TextView
+                android:id="@+id/tv_ammount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="￥0"
+                android:maxEms="4"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:minEms="4"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ruler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ammount"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:singleLine="true"
+            android:text=" "
+            android:textColor="#838383"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shop_name"
+            android:layout_toLeftOf="@+id/iv_default"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="2"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="4dp"
+            android:text=" "
+            android:textColor="#ADADAD"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_type"
+            android:layout_toLeftOf="@+id/iv_default"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:text="有效期: "
+            android:textColor="#ADADAD"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray" />
+
+    <View
+        android:id="@+id/line_last"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/subzero_bg_main_gray"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/line_losed"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@color/subzero_bg_main_gray"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="#ADADAD" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已失效红包"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textColor="#ADADAD" />
+
+        <View
+            android:layout_marginRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:background="#ADADAD" />
+    </LinearLayout>
+
+</LinearLayout>

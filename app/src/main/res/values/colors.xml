@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="subzero_title_color">#1FBCD9</color>
+    <color name="subzero_title_color_status_bar">#1FBCD9</color>
+    <color name="subzero_title_color_press">#1BA6C0</color>
+    <color name="subzero_foot_color">#F2F2F2</color>
+    <color name="subzero_bg_main_gray">#FAFAFA</color>
+    <color name="tv_indexFoot_normal">#B2B2B2</color>
+    <color name="tv_indexFoot_selected">#F47800</color>
+    <color name="listview_item_press">#DCDCDC</color>
+    <color name="group_white">#FFFFFF</color>
+    <color name="group_gray">#E8E8E8</color>
+    <color name="title_text_color">#FFFFFF</color>
+    <!-- 输入框_hint_灰色 -->
+    <color name="edit_hint_gray">#CCCCCC</color>
+    <!-- 输入框_text_灰色 -->
+    <color name="edit_text_gray">#333333</color>
+    <!-- 输入框_游标_蓝色 -->
+    <color name="edit_text_cursor_blue">#43DCFE</color>
+    <!-- 通用按钮，按压事件 -->
+    <color name="view_background_normal">#1FBCD9</color>
+    <color name="view_background_selected">#1BA6C0</color>
+    <color name="tvText_action_press">#23C4E8</color>
+    <color name="line_gray">#C8C7CC</color>
+
+    <!-- tabs：小滑块 -->
+    <color name="tabs_slider_color">#EE8303</color>
+    <!-- tabs：垂直的细线颜色 -->
+    <color name="tabs_vertical_line_colr">#1A000000</color>
+    <color name="tabs_text_normal">#9E9E9E</color>
+    <color name="tabs_text_selected">#8E8E8E</color>
+    <color name="tabs_text_background_normal">#00000000</color>
+    <color name="tabs_text_background_selected">#6633B5E5</color>
+    <color name="白色全透明">#00000000</color>
+    <color name="bg_listView_E5">#E5E5E5</color>
+
+    <!-- 订单状态的 文本颜色 -->
+    <color name="text_color_order_status_finishing">#71CEE3</color>
+    <color name="text_color_order_status_finished">#CCCCCC</color>
+    <color name="gray_68">#686868</color>
+    <color name="gray_35">#353535</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_5a">#5A5A5A</color>
+    <color name="gray_a5">#A5A5A5</color>
+    <color name="gray_cc">#CCCCCC</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_7a">#7A7A7A</color>
+    <color name="gray_bb">#BBBBBB</color>
+    <color name="gray_b2">#B2B2B2</color>
+
+</resources>
