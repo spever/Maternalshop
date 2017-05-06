@@ -8,8 +8,9 @@ public class Url
 {
 	//http://muyin.cooltou.cn
 	public static final int rows = 10;
-	public static final String doMain = "http://muyin.cooltou.cn/";
-	public static final String doMainApi = "http://muyin.cooltou.cn/zapi/?url=/";
+//	public static final String doMain = "http://muyin.cooltou.cn/";
+	public static final String doMain = "http://muyin.fjguang.com/";
+	public static final String doMainApi = "http://muyin.fjguang.com/zapi/?url=/";
 	/**4  (/user/signup)注册*/
 	public static final String registerApi = doMainApi+"user/signup";
 	/**17  忘记密码*/
@@ -76,10 +77,10 @@ public class Url
 	public static final String orderSubmitApi = doMainApi+"flow&format=json&action=done";
 	/**29   微信预支付单
 	 * */
-	public static final String weChatPayOrderApi = "http://muyin.cooltou.cn/zapi/?payment=wxpay/beforepay&format=json";
+	public static final String weChatPayOrderApi = "http://muyin.fjguang.com/zapi/?payment=wxpay/beforepay&format=json";
 	/**30   银联支付支付单
 	 * */
-	public static final String UnionPayApi = "http://muyin.cooltou.cn/zapi/index.php?payment=unionpay/apppay&format=json";
+	public static final String UnionPayApi = "http://muyin.fjguang.com/zapi/index.php?payment=unionpay/apppay&format=json";
 	/**14  (/order)用户订单
 	 * 取消订单：OrderPayActivity*/
 	public static final String orderCancelApi = doMainApi+"order/cancel&format=json";

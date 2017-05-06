@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/subzero_bg_main_gray"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
     tools:ignore="HardcodedText" >
 
     <RelativeLayout
@@ -93,7 +92,6 @@
                     android:id="@+id/tv_receiver_left"
                     style="@style/tv_fragment_mine_item"
                     android:layout_width="wrap_content"
-                    android:layout_toRightOf="@+id/tv_receiver_left"
                     android:text="收货人"
                     android:textColor="@color/gray_5a"
                     android:textSize="16sp" />

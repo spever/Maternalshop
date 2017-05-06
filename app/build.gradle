@@ -1,8 +1,22 @@
 apply plugin: 'com.android.application'
 
 android {
+
+        lintOptions {
+//            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+
     signingConfigs {
-        config {
+        release {
+            keyAlias 'android'
+            keyPassword 'subzero.com'
+            storeFile file('C:/AndroidStudioWorkSpace/Maternalshop/export_subzero_maternal_shop.keystore')
+            storePassword 'subzero.com'
+        }
+        debug {
             keyAlias 'android'
             keyPassword 'subzero.com'
             storeFile file('C:/AndroidStudioWorkSpace/Maternalshop/export_subzero_maternal_shop.keystore')
@@ -19,7 +33,7 @@ android {
     defaultConfig {
         applicationId "com.subzero.maternalshop"
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -27,10 +41,10 @@ android {
     buildTypes {
         release {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
+            signingConfig signingConfigs.release
         }
         debug {
-            signingConfig signingConfigs.config
+            signingConfig signingConfigs.debug
         }
     }
     productFlavors {

@@ -128,9 +128,9 @@ public class AddrDetailActivity extends BaseActivity
 		}
 	}
 	/**收货地址新增 
-	 * @param address 收货地
-	 * @param phoneNum 手机号
-	 * @param receiver 收货人*/
+	 * @param
+	 * @param
+	 * @param  */
 	private void addAddr()
 	{
 		RequestParams params = new RequestParams(XUtil.charset);
